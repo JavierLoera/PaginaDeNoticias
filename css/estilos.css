@@ -1,0 +1,143 @@
+/*header*/
+
+@import "header.css";
+@import "grid.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #022534;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#search {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    top: 35%;
+    padding: 5px;
+    transform: translate(-50, 10%, -50);
+    border-radius: 50px;
+    border: 4px solid #fff;
+    box-sizing: border-box;
+    background: #fff;
+    transition: 1.5s;
+}
+
+#search>input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 52px;
+    line-height: 75px;
+    outline: 0;
+    display: none;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 0 25px;
+    font-family: italic;
+}
+
+i.fa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    transition: 1.5s;
+    color: #000000;
+    background: #fcbb6d;
+    padding: 15px;
+}
+
+#search:hover {
+    width: 600px;
+    cursor: pointer;
+}
+
+#search:hover input {
+    display: block;
+}
+
+header .categorias {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: italic;
+}
+
+header .categorias a {
+    color: #9B9B9B;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header .categorias a.activo {
+    color: #fff;
+}
+
+.ir-arriba {
+    display: none;
+    padding: 20px;
+    background: #0B2F3A;
+    font-size: 20px;
+    color: #FF8000;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+
+/* Mediaqueries */
+
+@media screen and (min-width:701px) and (max-width: 1300px) {
+    #search {
+        top: 25%;
+        left: 15%;
+    }
+    #search:hover {
+        width: 300px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid .item {
+        width: calc(90%);
+    }
+    .grid .item img {
+        width: 100%;
+        height: 230px;
+        cursor: pointer;
+        vertical-align: top;
+    }
+    header .barra-busqueda {
+        width: 100%;
+    }
+    #search {
+        top: 20%;
+        left: 15%;
+    }
+    #search:hover {
+        width: 300px;
+        cursor: pointer;
+    }
+}

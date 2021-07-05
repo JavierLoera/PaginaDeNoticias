@@ -1,0 +1,104 @@
+    header {
+        width: 100%;
+        padding: 40px 0;
+    }
+    
+    header nav {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        background: black;
+    }
+    
+    .menu_bar {
+        display: none;
+    }
+    
+    header nav ul {
+        overflow: hidden;
+        list-style: none;
+    }
+    
+    header nav ul li {
+        float: left;
+    }
+    
+    header nav ul li a {
+        color: #fff;
+        padding: 20px;
+        display: block;
+        text-decoration: none;
+    }
+    
+    header nav ul li span {
+        margin-right: 30px;
+    }
+    
+    header nav ul li a:hover {
+        background: #F2F2F2;
+        color: black;
+    }
+    
+    header nav ul li .children {
+        display: none;
+        position: absolute;
+        width: 652px;
+        z-index: 1000;
+        background: black;
+    }
+    
+    header nav ul li .children li {
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+    
+    header nav ul li .children li a {
+        display: block;
+    }
+    /*mediaqueries*/
+    
+    @media screen and (max-width:800px) {
+        header nav ul li .children {
+            width: 78%;
+        }
+        header nav {
+            top: 0px;
+            width: 80%;
+            height: 100%;
+            left: -100%;
+            margin: 0;
+            position: fixed;
+            z-index: 1;
+        }
+        header nav ul li {
+            display: block;
+            float: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+        }
+        .menu_bar {
+            top: 0;
+            position: fixed;
+            display: block;
+            width: 100%;
+            background: black;
+            z-index: 1;
+        }
+        .menu_bar .bt-menu {
+            height: 70px;
+            display: block;
+            padding: 20px;
+            background: black;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 25px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .menu_bar span {
+            float: right;
+            font-size: 40px;
+        }
+    }

@@ -1,0 +1,116 @@
+/*header*/
+
+@import "header.css";
+body {
+    background: hsl(229, 23%, 23%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*formulario*/
+
+input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 20px
+}
+
+input,
+textarea {
+    color: f2f2f2;
+    background-color: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+#boton {
+    background-color: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+#boton:hover {
+    background: rgba( 243, 237, 237, 0.05);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10.0px);
+    -webkit-backdrop-filter: blur( 10.0px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    cursor: pointer;
+}
+
+
+/*buttons social*/
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social>h2 {
+    margin-top: 50px;
+}
+
+.social ul li a {
+    padding: 25px;
+    border-width: 1px;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background: #00000000;
+    text-decoration: none;
+    -transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    border-radius: 20px;
+}
+
+.social ul li a:hover {
+    padding: 30px;
+    background: black;
+}
+
+.social ul {
+    padding-left: 6px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .social>h2 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
