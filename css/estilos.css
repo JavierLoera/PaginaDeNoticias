@@ -21,8 +21,8 @@ a {
     position: absolute;
     width: 60px;
     height: 60px;
-    left: 20%;
-    top: 35%;
+    	left: 20%;
+	top: 25%;
     padding: 5px;
     transform: translate(-50, 10%, -50);
     border-radius: 50px;
