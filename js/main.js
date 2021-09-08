@@ -44,11 +44,7 @@
 
 
 
-      // Eventlistener del boton de cerrar
-      document.querySelector('#btn-cerrar-popup').addEventListener('click', () => {
-          overlay.classList.remove('activo');
-      });
-
+ 
       // Eventlistener del overlay
       overlay.addEventListener('click', (evento) => {
           evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
