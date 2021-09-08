@@ -1,72 +1,72 @@
 @import "header.css";
-@import url("https://fonts.googleapis.com/Css2?family=Roboto:wght@100&display=swap");
+
 @import url("https://fonts.googleapis.com/css?family=Lora:wght@600&display=swap");
 .ir-arriba {
-    display: none;
-    padding: 20px;
-    background: #0B2F3A;
-    font-size: 20px;
-    color: #FF8000;
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1;
+	display: none;
+	padding: 20px;
+	background: #0b2f3a;
+	font-size: 20px;
+	color: #ff8000;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1;
 }
 
 body {
-    background: #eaeff2;
+	background: #eaeff2;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    grid-template-rows: auto;
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr 2fr;
+	grid-template-rows: auto;
 }
 
 #banner {
-    grid-column: 2/4;
+	grid-column: 2/4;
 }
 
-.contenido>h1 {
-    font-size: 2em;
-    font-family: "Lora", serif;
+.contenido > h1 {
+	font-size: 2em;
+	font-family: "Lora", serif;
 }
 
 .contenido {
-    font-size: 1.5em;
-    color: #67595e;
-    grid-column: 2/4;
-    font-family: "Roboto", sans-serif;
+	font-size: 1.5em;
+	color: #67595e;
+	grid-column: 2/4;
+	font-family: "Roboto", sans-serif;
 }
 
-#banner>img {
-    height: auto;
-    width: 100%;
+#banner > img {
+	height: auto;
+	width: 100%;
 }
 
-@media screen and (max-width:800px) {
-    main {
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: auto;
-    }
-    #banner {
-        grid-column: 2/3;
-    }
-    .contenido {
-        grid-column: 2/3;
-    }
+@media screen and (max-width: 800px) {
+	main {
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-rows: auto;
+	}
+	#banner {
+		grid-column: 2/3;
+	}
+	.contenido {
+		grid-column: 2/3;
+	}
 }
 
-@media screen and (max-width:1200px) {
-    main {
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: auto;
-    }
-    #banner {
-        grid-column: 2/3;
-    }
-    .contenido {
-        grid-column: 2/3;
-    }
+@media screen and (max-width: 1200px) {
+	main {
+		grid-template-columns: 1fr 4fr 1fr;
+		grid-template-rows: auto;
+	}
+	#banner {
+		grid-column: 2/3;
+	}
+	.contenido {
+		grid-column: 2/3;
+	}
 }

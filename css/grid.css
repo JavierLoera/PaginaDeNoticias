@@ -1,73 +1,73 @@
 .contenedor {
-    width: 90%;
-    max-width: 800px;
-    margin: auto;
+	width: 90%;
+	max-width: 800px;
+	margin: auto;
 }
 
 .grid {
-    position: relative;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.5s linear 1s;
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
 }
 
 .grid.imagenes-cargadas {
-    opacity: 1;
+	opacity: 1;
 }
 
 .grid .item {
-    position: absolute;
-    display: block;
-    padding: 0;
-    margin: 10px;
-    width: calc(100% - 20px);
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(100% - 20px);
 }
 
 .grid .item-contenido {
-    position: relative;
+	position: relative;
 }
 
 .grid .item img {
-    width: 100%;
-    cursor: pointer;
-    vertical-align: top;
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
 }
 
 figure {
-    margin: 0;
-    display: inline-block;
-    border: #070B19;
-    position: relative;
-    overflow: hidden;
+	margin: 0;
+	display: inline-block;
+	border: #070b19;
+	position: relative;
+	overflow: hidden;
 }
 
 figcaption a {
-    color: white;
+	color: white;
 }
 
 figcaption {
-    color: white;
-    transition: all 0.3s;
-    background: (0, 0, 0, 0.7);
-    position: absolute;
-    left: 0px;
-    bottom: -350px;
-    width: 94%;
-    padding: 3%;
+	color: white;
+	transition: all 0.3s;
+	background: (0, 0, 0, 0.7);
+	position: absolute;
+	left: 0px;
+	bottom: -350px;
+	width: 94%;
+	padding: 3%;
 }
 
 figure:hover figcaption {
-    bottom: 0px;
+	bottom: 0px;
 }
 
 figure img {
-    width: 100%;
+	width: 100%;
 }
 
 #wrapper {
-    width: 100%;
+	width: 100%;
 }
 
 #wrapper img {
-    width: 100%;
+	width: 100%;
 }
