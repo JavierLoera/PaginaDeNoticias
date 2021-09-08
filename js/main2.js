@@ -1,4 +1,4 @@
-$(document).ready(main);
+$(document).ready(main){
 
 var contador = 1;
 
@@ -24,7 +24,7 @@ function main() {
     $('.submenu').click(function() {
         $(this).children('.children').slideToggle();
     });
-}
+
 
 $(document).ready(function() {
     $('.ir-arriba').click(function() {
