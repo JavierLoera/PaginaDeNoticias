@@ -41,7 +41,10 @@
           const busqueda = evento.target.value;
           grid.filter((item) => item.getElement().dataset.etiquetas.includes(busqueda));
       });
-
+// Eventlistener del boton de cerrar 
+    document.querySelector('#btn-cerrar-popup').addEventListener('click', () => { 
+      overlay.classList.remove('activo');
+    });
 
 
  
